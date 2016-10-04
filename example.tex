@@ -1,0 +1,60 @@
+% PROJECT: <ETD> Electronic Thesis and Dissertation Initiative
+%   TITLE: NFOV localization and tire noise prediction
+%  AUTHOR: Kuya Takami
+%     URL: https://github.com/ku-ya/paper/thesis
+% compile using XeLatex
+\documentclass[12pt]{thesis}
+%\newglossary[nlg]{notation}{not}{ntn}{Notation}
+%\newglossary[slg]{symbolslist}{syi}{syg}{Nomenclature}
+%\makenoidxglossaries
+%\input{acronym.tex}
+%\usepackage{fancyhdr}
+%\usepackage{array}
+%\usepackage[grey]{quotchap}
+%\usepackage[Lenny]{fncychap}
+\usepackage{lipsum}
+
+%\usepackage[default]{frcursive}
+%\usepackage[T1]{fontenc}
+%\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\sectionmark}[1]{\markboth{#1}{}} % set the \leftmark
+\fancyhf{}
+\fancyhead[R]{\bfseries \thepage} % predefined ()
+\fancyhead[L]{\bfseries \leftmark} % 1. sectionname
+
+
+%\includeonly{Title_format,Introduction,Literature_review,RBE,NFOV,Conclusion}
+
+%\ChNameVar{\fontsize{20}{24}\usefont{OT1}{phv}{m}{n}\selectfont}
+%\ChNumVar{\fontsize{90}{95}\usefont{OT1}{ptm}{m}{n}\selectfont}
+%\ChTitleVar{\vspace{30mm}\Huge\bfseries}
+%\ChRuleWidth{2pt}
+%\ChNameUpperCase
+
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{2pt}
+
+%\usepackage{sectsty} 
+%\sectionfont{ \sectionrule{0pt}{0pt}{-5pt}{0.8pt} }
+
+\usepackage{type1cm} % scalable fonts
+\usepackage{lettrine}
+\newcommand{\cdrop}[2]{\lettrine[lines=3]{\color{Black}#1}{#2}}
+
+%\includeonly{Title_format,Introduction,Literature_review,RBE,NFOV,Conclustion}
+\begin{document}
+\include{Title_section}
+\doublespacing
+\pagenumbering{arabic}
+\pagestyle{myheadings}
+\include{Introduction}
+%\include{Conclusion}
+\singlespacing
+\renewcommand{\bibname}{References}
+\addcontentsline{toc}{chapter}{References}
+\bibliographystyle{unsrtnat}
+%\bibliography{cite_cur,takami_conference,takami_journal}
+%\chapter*{Appendices}
+%\addcontentsline{toc}{chapter}{Appendices}
+\end{document}
