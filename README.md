@@ -1,0 +1,2 @@
+# dissertation
+Stripped down template
